@@ -1,0 +1,26 @@
+.card__formula-border {
+  width: 178px;
+  height: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.card__formula-border:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 10%; /* or 100px */
+  border-bottom: 2px solid #dededc;
+}
+
+.card__formula-border:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%; /* or 100px */
+  border-right: 2px solid #dededc;
+}
