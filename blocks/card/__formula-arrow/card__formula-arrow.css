@@ -1,0 +1,63 @@
+/* .card__formula-arrow {
+  width: 208px;
+  height: 48px;
+  border-width: 2px;
+  border-color: transparent transparent #dededc #dededc;
+  border-style: solid;
+  border-radius: 100px;
+  position: relative;
+  margin: 20px;
+}
+
+.card__formula-arrow:after {
+  content: '';
+  border: 20px solid transparent;
+  border-bottom: 20px solid #dededc;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -20px;
+  right: 58px;
+} */
+
+.card__formula-arrow {
+  position: relative;
+  width: 178px;
+  height: 38px;
+  margin-left: 70px;
+  top: 55px;
+}
+
+.card__formula-arrow div {
+  position: relative;
+  /* top: 55px; */
+  height: 80px;
+  margin-left: 10px;
+  /* width: 100px; */
+  /* height: 2px; */
+  border-top: 2px solid #dededc;
+  border-radius: 45%;
+  /* background-color: #dededc; */
+  display: block;
+}
+
+.card__formula-arrow div::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  top: 15px;
+  right: 8px;
+  background-color: #dededc;
+  transform: rotate(175deg);
+}
+
+.card__formula-arrow div::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  top: 5px;
+  right: -3px;
+  background-color: #dededc;
+  transform: rotate(-45deg);
+}
