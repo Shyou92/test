@@ -1,0 +1,5 @@
+.card__container {
+  margin: 80px 32px 62px;
+  display: flex;
+  justify-content: space-between;
+}

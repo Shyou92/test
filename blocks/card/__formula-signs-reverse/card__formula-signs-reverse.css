@@ -1,0 +1,7 @@
+.card__formula-signs-reverse {
+  display: inline-block;
+  font-family: 'cmu_brightroman';
+  width: 20px;
+  font-weight: 100;
+  line-height: 20px;
+}

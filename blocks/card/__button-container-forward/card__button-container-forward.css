@@ -1,0 +1,15 @@
+.card__button-container-forward {
+  width: 183px;
+  height: 50px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.card__button-container-forward:hover {
+  transition: 0.3s;
+  background-color: #007aff;
+}

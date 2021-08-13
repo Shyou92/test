@@ -1,3 +1,16 @@
-.header {
-  color: red;
-}
+@import url(./vendor/normalize.css);
+@import url(./fonts/font.css);
+
+@import url(./blocks/page/page.css);
+
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/__text/card__text.css);
+@import url(./blocks/card/__formula/card__formula.css);
+@import url(./blocks/card/__formula-answer/card__formula-answer.css);
+@import url(./blocks/card/__container/card__container.css);
+@import url(./blocks/card/__button-container/card__button-container.css);
+@import url(./blocks/card/__formula-signs-reverse/card__formula-signs-reverse.css);
+@import url(./blocks/card/__button-container-forward/card__button-container-forward.css);
+@import url(./blocks/card/__button-container-forward/_repeat/card__button-container-forward_repeat.css);
+@import url(./blocks/card/__button-container-back/card__button-container-back.css);
+@import url(./blocks/card/__container-counter/card__container-counter.css);

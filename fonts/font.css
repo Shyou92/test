@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'cmu_concreteitalic';
+  src: url('cmunoti-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cmu_brightroman';
+  src: url('cmunbmr-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
