@@ -1,0 +1,7 @@
+.card__arrow {
+  position: relative;
+  top: 50px;
+  left: 85px;
+  visibility: hidden;
+  width: 126px;
+}
