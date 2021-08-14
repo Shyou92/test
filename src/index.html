@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="page">
+    <main class="main">
+      <section class="card">
+        <p class="card__text">В итоге получается следующая формула:</p>
+        <img
+          class="card__arrow"
+          src="<%=require('./images/Arrow_1.svg')%>"
+          alt="Стрелка, указывающая с а на х"
+        />
+        <img
+          src="<%=require('./images/Arrow_2.svg')%>"
+          alt="Стрелка, указывающая с а на у"
+          class="card__arrow card__arrow-long"
+        />
+        <img
+          src="<%=require('./images/Arrow_3.svg')%>"
+          alt="Стрелка, указывающая с b на х"
+          class="card__arrow card__arrow-short"
+        />
+        <img
+          src="<%=require('./images/Arrow_1.svg')%>"
+          alt="Стрелка, указывающая с b на y"
+          class="card__arrow card__arrow-2"
+        />
+        <p class="card__formula" id="aFormulaElement">
+          <span
+            class="card__formula-signs-reverse card__formula-signs-reverse_brackets"
+            >(</span
+          >a<span class="card__formula-signs-reverse">
+            +
+          </span>
+          b<span
+            class="card__formula-signs-reverse card__formula-signs-reverse_brackets"
+            >)</span
+          ><span
+            class="card__formula-signs-reverse card__formula-signs-reverse_brackets"
+            >(</span
+          >x<span class="card__formula-signs-reverse">
+            +
+          </span>
+          y<span
+            class="card__formula-signs-reverse card__formula-signs-reverse_brackets"
+            >)</span
+          >
+          <span class="card__formula-signs-reverse"> = </span>
+        </p>
+        <p class="card__formula card__formula-answer">
+          <span class="card__formula-signs-reverse"> = </span> ax
+          <span class="card__formula-signs-reverse"> + </span> ay
+          <span class="card__formula-signs-reverse"> + </span> bx
+          <span class="card__formula-signs-reverse"> + </span>
+          <span class="card__formula-dots">...</span>
+        </p>
+        <div class="card__container">
+          <span class="card__container-counter">1 из 9</span>
+          <div class="card__button-container">
+            <button
+              class="card__button-container-back card__button-container-back_visible"
+            ></button>
+            <button class="card__button-container-forward">Далее</button>
+            <button
+              class="card__button-container-forward card__button-container-forward_repeat"
+            ></button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
