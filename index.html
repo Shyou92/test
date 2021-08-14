@@ -24,10 +24,10 @@
         <img
           src="./images/Arrow 3.svg"
           alt="Стрелка, указывающая с b на х"
-          class="card__arrow-short card__arrow_active-short"
+          class="card__arrow card__arrow-short"
         />
         <img
-          class="card__arrow-2 card__arrow_active"
+          class="card__arrow card__arrow-2"
           src="./images/Arrow 1.svg"
           alt="Стрелка, указывающая с b на y"
         />
@@ -57,12 +57,15 @@
           <span class="card__formula-signs-reverse"> = </span> ax
           <span class="card__formula-signs-reverse"> + </span> ay
           <span class="card__formula-signs-reverse"> + </span> bx
-          <span class="card__formula-signs-reverse"> + </span> by
+          <span class="card__formula-signs-reverse"> + </span>
+          <span class="card__formula-dots">...</span>
         </p>
         <div class="card__container">
           <span class="card__container-counter">1 из 9</span>
           <div class="card__button-container">
-            <button class="card__button-container-back"></button>
+            <button
+              class="card__button-container-back card__button-container-back_hidden"
+            ></button>
             <button class="card__button-container-forward">Далее</button>
             <button
               class="card__button-container-forward card__button-container-forward_repeat"

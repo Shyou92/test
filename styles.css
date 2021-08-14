@@ -11,9 +11,12 @@
 @import url(./blocks/card/__button-container/card__button-container.css);
 @import url(./blocks/card/__formula-signs-reverse/card__formula-signs-reverse.css);
 @import url(./blocks/card/__formula-signs-reverse/_brackets/__formula-signs-reverse_brackets.css);
+@import url(./blocks/card/__formula-dots/card__formula-dots.css);
+@import url(./blocks/card/__formula-dots/_hidden/card__formula-dots_hidden.css);
 @import url(./blocks/card/__button-container-forward/card__button-container-forward.css);
 @import url(./blocks/card/__button-container-forward/_repeat/card__button-container-forward_repeat.css);
 @import url(./blocks/card/__button-container-back/card__button-container-back.css);
+@import url(./blocks/card/__button-container-back/_hidden/card__button-container-back_hidden.css);
 @import url(./blocks/card/__container-counter/card__container-counter.css);
 @import url(./blocks/card/__arrow/card__arrow.css);
 @import url(./blocks/card/__arrow-long/card__arrow-long.css);

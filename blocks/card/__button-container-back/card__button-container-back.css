@@ -9,4 +9,5 @@
   border: 1px solid #1a1b22;
   border-radius: 8px;
   cursor: pointer;
+  visibility: visible;
 }
