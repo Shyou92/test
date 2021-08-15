@@ -30,20 +30,19 @@
           alt="Стрелка, указывающая с b на y"
           class="card__arrow card__arrow-2"
         />
-        <p class="card__formula" id="aFormulaElement">
+        <p class="card__formula">
           <span
             class="card__formula-signs-reverse card__formula-signs-reverse_brackets"
             >(</span
-          >a<span class="card__formula-signs-reverse">
-            +
-          </span>
-          b<span
+          ><span class="parentElem" id="aElement">a</span
+          ><span class="card__formula-signs-reverse">+</span> b<span
             class="card__formula-signs-reverse card__formula-signs-reverse_brackets"
             >)</span
           ><span
             class="card__formula-signs-reverse card__formula-signs-reverse_brackets"
             >(</span
-          >x<span class="card__formula-signs-reverse">
+          ><span class="parentElemX" id="xElement">x</span
+          ><span class="card__formula-signs-reverse">
             +
           </span>
           y<span
@@ -53,7 +52,8 @@
           <span class="card__formula-signs-reverse"> = </span>
         </p>
         <p class="card__formula card__formula-answer">
-          <span class="card__formula-signs-reverse"> = </span> ax
+          <span class="card__formula-signs-reverse"> = </span>
+          <span id="formulaSpan"></span>
           <span class="card__formula-signs-reverse"> + </span> ay
           <span class="card__formula-signs-reverse"> + </span> bx
           <span class="card__formula-signs-reverse"> + </span>
