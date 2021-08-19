@@ -35,7 +35,7 @@
             class="card__formula-signs-reverse card__formula-signs-reverse_brackets"
             >(</span
           ><span class="parentElem" id="aElement">a</span
-          ><span class="card__formula-signs-reverse">+</span> b<span
+          ><span class="card__formula-signs-reverse">+</span id='bElement'> b<span
             class="card__formula-signs-reverse card__formula-signs-reverse_brackets"
             >)</span
           ><span
@@ -45,19 +45,33 @@
           ><span class="card__formula-signs-reverse">
             +
           </span>
-          y<span
+          <span class='parentElemY' id="yElement">y</span><span
             class="card__formula-signs-reverse card__formula-signs-reverse_brackets"
             >)</span
           >
           <span class="card__formula-signs-reverse"> = </span>
         </p>
         <p class="card__formula card__formula-answer">
-          <span class="card__formula-signs-reverse"> = </span>
-          <span id="formulaSpan"></span>
-          <span class="card__formula-signs-reverse"> + </span> ay
-          <span class="card__formula-signs-reverse"> + </span> bx
-          <span class="card__formula-signs-reverse"> + </span>
-          <span class="card__formula-dots">...</span>
+          <span class="card__formula-signs-reverse card__formula-first">
+            =
+          </span>
+          <span id="formulaFirstSpan"></span>
+          <span
+            class="card__formula-signs-reverse card__formula-first"
+            id="cardFormulaPlus"
+          >
+            +
+          </span>
+          <span id="formulaSecondSpan"></span>
+          <span
+            class="card__formula-dots card__formula-first"
+            id="cardFormulaDots"
+            >...</span
+          >
+          <span class="card__formula-signs-reverse card__formula-second"> + </span>
+          <span class="card__formula-dots card__formula-second">...</span>
+          <!-- <span class="card__formula-signs-reverse"> + </span>
+          <span class="card__formula-dots">...</span> -->
         </p>
         <div class="card__container">
           <span class="card__container-counter">1 из 9</span>

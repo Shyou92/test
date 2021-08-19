@@ -13,5 +13,9 @@
 .parentElemX {
   position: relative;
   top: 0px;
-  left: 00px;
+  left: 0px;
+}
+
+.parentElemY {
+  position: relative;
 }
