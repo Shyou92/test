@@ -11,6 +11,7 @@ const card = document.querySelector('.card');
 const firstGroup = document.querySelectorAll('.card__formula-first');
 const secondGroup = document.querySelectorAll('.card__formula-second');
 const btnForward = document.querySelector('.card__button-container-forward');
+const templateMarks = document.querySelector('#template-marks').content;
 
 export {
   aFormulaElement,
@@ -26,4 +27,5 @@ export {
   formulaDots,
   formulaSecondSpan,
   btnForward,
+  templateMarks,
 };

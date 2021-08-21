@@ -11,6 +11,7 @@ import {
   formulaDots,
   formulaSecondSpan,
   btnForward,
+  templateMarks,
 } from './config';
 
 const firstGroupArray = Array.from(firstGroup);
@@ -48,17 +49,17 @@ function animate({ timing, draw, duration }) {
 
 const newaElement = aFormulaElement.cloneNode(true);
 const newYElement = yFormulaElement.cloneNode(true);
-const SecondGroupArray = Array.from(secondGroup);
+// const SecondGroupArray = Array.from(secondGroup);
 
 formulaSecondSpan.prepend(newaElement);
 formulaSecondSpan.append(newYElement);
-formulaDots.remove();
+// formulaDots.remove();
 
-Array.from(
-  SecondGroupArray.map((item) => {
-    item.style.opacity = 0;
-  })
-);
+// Array.from(
+//   SecondGroupArray.map((item) => {
+//     item.style.opacity = 0;
+//   })
+// );
 
 newaElement.style.top = -100 + 'px';
 newaElement.style.left = -182 + 'px';
@@ -82,24 +83,24 @@ function animate1({ timing, draw, duration }) {
   });
 }
 
-animate1({
-  duration: 400,
-  timing(timeFraction) {
-    return timeFraction;
-  },
-  draw(formulaSecondSpan) {
-    newaElement.style.top = formulaSecondSpan * 0 + 'px';
-    newaElement.style.left = formulaSecondSpan * 0 + 'px';
-    newaElement.style.transition = 0.8 + 's';
-    newYElement.style.top = formulaSecondSpan * 0 + 'px';
-    newYElement.style.left = formulaSecondSpan * 0 + 'px';
-    newYElement.style.transition = 0.8 + 's';
-    SecondGroupArray.map((item) => {
-      item.style.opacity = 1;
-      item.style.transition = 0.3 + 's';
-    });
-  },
-});
+// animate1({
+//   duration: 400,
+//   timing(timeFraction) {
+//     return timeFraction;
+//   },
+//   draw(formulaSecondSpan) {
+//     newaElement.style.top = formulaSecondSpan * 0 + 'px';
+//     newaElement.style.left = formulaSecondSpan * 0 + 'px';
+//     newaElement.style.transition = 0.8 + 's';
+//     newYElement.style.top = formulaSecondSpan * 0 + 'px';
+//     newYElement.style.left = formulaSecondSpan * 0 + 'px';
+//     newYElement.style.transition = 0.8 + 's';
+//     SecondGroupArray.map((item) => {
+//       item.style.opacity = 1;
+//       item.style.transition = 0.3 + 's';
+//     });
+//   },
+// });
 
 btnForward.addEventListener('click', () => {
   animate({
@@ -107,17 +108,23 @@ btnForward.addEventListener('click', () => {
     timing(timeFraction) {
       return timeFraction;
     },
-    draw(formulaFirstSpan) {
-      newAElement.style.top = formulaFirstSpan * 0;
-      newAElement.style.left = formulaFirstSpan * 0;
+    draw(progress = 0) {
+      newAElement.style.top = progress * 0;
+      newAElement.style.left = progress * 0;
       newAElement.style.transition = 0.8 + 's';
-      newXElement.style.top = formulaFirstSpan * 0 + 'px';
-      newXElement.style.left = formulaFirstSpan * 0 + 'px';
+      newXElement.style.top = progress * 0 + 'px';
+      newXElement.style.left = progress * 0 + 'px';
       newXElement.style.transition = 0.8 + 's';
-      firstGroupArray.map((item) => {
-        item.style.opacity = 1;
-        item.style.transition = 0.3 + 's';
-      });
+      // firstGroupArray.map((item) => {
+      //   console.log(item);
+      //   item.style.opacity = 1;
+      //   item.style.transition = 0.3 + 's';
+      // });
+      const templateMarksClone = templateMarks.cloneNode(true).children[0];
+      console.log(formulaFirstSpan);
+      templateMarksClone.style.opacity = 1;
+      templateMarksClone.style.transition = 0.3 + 's';
+      formulaFirstSpan.prepend(templateMarksClone);
     },
   });
 });
